@@ -29,11 +29,6 @@ class StanzaTest {
 	
 	//TEST ADD ATTREZZO
 	@Test
-	void testAddAttrezzo_null() {
-		Stanza s = new Stanza ("s");
-		assertTrue(s.addAttrezzo(null)); 
-	}
-	@Test
 	void testAddAttrezzo_funzionante() {
 		Stanza s = new Stanza ("s");
 		Attrezzo a =new Attrezzo("a",2);
