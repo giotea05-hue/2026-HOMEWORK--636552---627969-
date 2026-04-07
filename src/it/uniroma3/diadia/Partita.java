@@ -17,7 +17,7 @@ public class Partita {
 	
 
 	private Stanza stanzaCorrente;  
-	 //QUA è INUTILE, PERCHE TENERLA NELLA PARTITA? SPOSTA IN LABIRINTO!
+	 
 	private Labirinto labirintoCorrente;
 	private boolean finita;
 	
@@ -33,7 +33,7 @@ public class Partita {
 		this.stanzaCorrente = labirintoCorrente.getStanzaIniziale();
 		this.finita = false;
 		this.player=new Giocatore(this.io);
-		this.player.creaGiocatore(io);
+		
 		
 		
 	}
@@ -77,7 +77,13 @@ public class Partita {
 	}
 	
 	public Giocatore getPlayer() {
+		
+
 		return this.player;
+	}
+	
+	public Labirinto getLabirinto() {
+		return this.labirintoCorrente;
 	}
 
 	
