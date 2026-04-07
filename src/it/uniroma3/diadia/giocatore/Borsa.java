@@ -36,7 +36,7 @@ public class Borsa {
         return true;
     }
     
-    public Attrezzo removeAttrezzo(Attrezzo attrezzo) {
+    public Attrezzo removeAttrezzo(Attrezzo attrezzo) {//MODIFICA STRING IN ATTREZZO E RIDUCI PESO BORSA
         Attrezzo a = null;
         for(int i=0;i<this.numeroAttrezzi;i++) {
         	if(this.attrezzi[i]==attrezzo) {
@@ -58,7 +58,7 @@ public class Borsa {
     public Attrezzo getAttrezzo(String nomeAttrezzo) {
         Attrezzo a = null;
         for (int i = 0; i < this.numeroAttrezzi; i++)
-            if (this.attrezzi[i].getNome().equals(nomeAttrezzo))
+            if (this.attrezzi[i].getNome().equals(nomeAttrezzo))//PRENDE L'ATTREZZO DALLA BORSA
                 a = attrezzi[i];
 
         return a;
