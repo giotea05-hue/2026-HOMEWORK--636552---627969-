@@ -1,3 +1,4 @@
+package HomeworkA;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
@@ -15,7 +16,7 @@ class StanzaTest {
 	}
 	@Test
 	void testHasAttrezzo_trovato() {
-		Stanza piena = new Stanza ("piena");
+		Stanza piena = new Stanza ("piena"); 
 		piena.addAttrezzo(new Attrezzo("martello",10));
 		assertTrue(piena.hasAttrezzo("martello"));
 	}
@@ -27,6 +28,11 @@ class StanzaTest {
 	}
 	
 	//TEST ADD ATTREZZO
+	@Test
+	void testAddAttrezzo_null() {
+		Stanza s = new Stanza ("s");
+		assertTrue(s.addAttrezzo(null)); 
+	}
 	@Test
 	void testAddAttrezzo_funzionante() {
 		Stanza s = new Stanza ("s");
@@ -53,8 +59,7 @@ class StanzaTest {
 	@Test
 	void testRemoveAttrezzo_null() {
 		Stanza s = new Stanza ("s");
-		assertFalse(s.removeAttrezzo(null)); //va bene?
-	}
+		assertFalse(s.removeAttrezzo(null)); 	}
 	@Test
 	void testRemoveAttrezzo_aggiunto() {
 		Stanza s = new Stanza ("s");
