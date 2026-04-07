@@ -11,7 +11,7 @@ public class Giocatore {
 	static final private int CFU_INIZIALI = 20;
 	
 	public Giocatore(IOConsole i) {
-		this.io = io;
+		this.io = i;
         // PASSIAMO L'OGGETTO ALLA BORSA
         this.borsa = new Borsa(20,io); 
         this.CFU = 20;
