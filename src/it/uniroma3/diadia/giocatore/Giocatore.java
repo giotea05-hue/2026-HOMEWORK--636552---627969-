@@ -14,20 +14,15 @@ public class Giocatore {
 		this.io = i;
         // PASSIAMO L'OGGETTO ALLA BORSA
         this.borsa = new Borsa(20,io); 
-        this.CFU = 20;
+        this.CFU = CFU_INIZIALI;
 	}
 	
 	
-	public void creaGiocatore(IOConsole i) {
-		this.io=i;
-		borsa= new Borsa(20,this.io);
-		this.CFU = CFU_INIZIALI;
+	
 		
 		
 		
-		
-		
-	}
+	
 	
 	
 	
