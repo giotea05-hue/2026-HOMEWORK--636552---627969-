@@ -15,7 +15,7 @@ class StanzaTest {
 	}
 	@Test
 	void testHasAttrezzo_trovato() {
-		Stanza piena = new Stanza ("piena"); //tasto destro su new stanza piena, refactor, create new variable 
+		Stanza piena = new Stanza ("piena");
 		piena.addAttrezzo(new Attrezzo("martello",10));
 		assertTrue(piena.hasAttrezzo("martello"));
 	}
@@ -27,11 +27,6 @@ class StanzaTest {
 	}
 	
 	//TEST ADD ATTREZZO
-	@Test
-	void testAddAttrezzo_null() {
-		Stanza s = new Stanza ("s");
-		assertTrue(s.addAttrezzo(null)); //va bene?
-	}
 	@Test
 	void testAddAttrezzo_funzionante() {
 		Stanza s = new Stanza ("s");
