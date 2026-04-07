@@ -1,0 +1,48 @@
+package it.uniroma3.diadia.giocatore;
+
+import it.uniroma3.diadia.IOConsole;
+
+public class Giocatore {
+	private int CFU;
+	private Borsa borsa;
+	private IOConsole io;
+	
+	
+	static final private int CFU_INIZIALI = 20;
+	
+	public Giocatore(IOConsole i) {
+		this.io = io;
+        // PASSIAMO L'OGGETTO ALLA BORSA
+        this.borsa = new Borsa(20,io); 
+        this.CFU = 20;
+	}
+	
+	
+	public void creaGiocatore(IOConsole i) {
+		this.io=i;
+		borsa= new Borsa(20,this.io);
+		this.CFU = CFU_INIZIALI;
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	public void setCFU(int c) {
+		this.CFU=c;
+	
+	}
+	
+	public int getCFU() {
+		return this.CFU;
+	}
+	
+	public Borsa getBorsa() {
+		return this.borsa;
+	}
+	
+
+}
